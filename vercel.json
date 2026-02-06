@@ -1,4 +1,5 @@
 {
+  "outputDirectory": "dist/RealWeddingInvtCard/browser",
   "routes": [
     {
       "src": "/(.*)",
