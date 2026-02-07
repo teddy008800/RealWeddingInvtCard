@@ -1,9 +1,73 @@
-<section class="min-h-screen flex flex-col justify-center items-center">
-  <h1 class="text-4xl font-serif mb-4">
-    Walimatul Urus
-  </h1>
+<div class="min-h-screen bg-cover bg-center" style="background-image:url('/assets/images/bg-wedding.jpg')">
 
-  <p class="mb-6">Aqil & Pasangan</p>
+    <!-- SALAM -->
+    <section class="pt-16 text-center text-white text-4xl font-serif drop-shadow-lg">
+      <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+    </section>
 
-  <app-countdown-timer [weddingDate]="weddingDate"></app-countdown-timer>
-</section>
+    <!-- Parent & Couple -->
+    <section class="mt-8 text-center text-gray-900">
+      <p class="text-xl">Parents of Groom & Bride</p>
+      <h1 class="text-5xl font-bold">Aqil <span class="text-pink-500">&</span> Syafiqah</h1>
+    </section>
+
+    <!-- Venue / Date / Time -->
+    <section class="mt-8 text-center text-gray-800">
+      <p class="text-lg">Venue: Grand Ballroom</p>
+      <p class="text-lg">12th Aug 2026 | 11:00 AM</p>
+    </section>
+
+    <!-- Optional Tentative -->
+    <section class="mt-8 p-4 bg-white/70 rounded-lg max-w-xl mx-auto text-center">
+      <h2 class="text-2xl font-semibold mb-2">Tentative Schedule</h2>
+      <p>Ceremony — 11:00 AM</p>
+      <p>Reception — 1:00 PM</p>
+    </section>
+
+    <!-- Countdown -->
+    <section class="mt-8 text-center">
+      <app-countdown-timer [weddingDate]="weddingDate" class="text-3xl font-bold text-pink-600"></app-countdown-timer>
+    </section>
+
+    <!-- Picture Gallery -->
+    <section class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4 p-4">
+      <img src="/assets/images/gallery1.jpg" class="w-full h-auto rounded-lg shadow-lg" />
+      <img src="/assets/images/gallery2.jpg" class="w-full h-auto rounded-lg shadow-lg" />
+      <img src="/assets/images/gallery3.jpg" class="w-full h-auto rounded-lg shadow-lg" />
+    </section>
+
+    <!-- Guest Wish Notes -->
+    <section class="mt-12 p-4 max-w-2xl mx-auto">
+      <h2 class="text-center text-3xl font-semibold mb-4">Guest Wishes</h2>
+      <ul class="space-y-3">
+        <li class="bg-white p-3 rounded-lg shadow-sm">“Congratulations and best wishes!”</li>
+        <li class="bg-white p-3 rounded-lg shadow-sm">“May your life be filled with joy.”</li>
+      </ul>
+    </section>
+
+    <!-- Guest Form -->
+    <section class="mt-12 p-4 max-w-xl mx-auto bg-white rounded-lg shadow-lg">
+      <h2 class="text-2xl font-semibold mb-4 text-center">Leave a Wish / RSVP</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
+        <input type="text" placeholder="Wish / Message" class="w-full p-3 border rounded-lg" />
+        <button class="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold">Send</button>
+      </form>
+    </section>
+
+    <!-- QR Donation -->
+    <section class="mt-12 text-center">
+      <h2 class="text-2xl font-semibold mb-3">QR for Donations</h2>
+      <img src="/assets/images/qr-money.png" class="mx-auto w-40 h-40" />
+    </section>
+
+  </div>
+
+  <!-- Sticky Bottom Navbar -->
+  <nav class="fixed bottom-0 left-0 w-full bg-white shadow-inner flex justify-around py-3">
+    <a href="#home" class="text-lg font-medium text-gray-700">Home</a>
+    <a href="#location" class="text-lg font-medium text-gray-700">Location</a>
+    <a href="#calendar" class="text-lg font-medium text-gray-700">Calendar</a>
+    <a href="#rsvp" class="text-lg font-medium text-gray-700">RSVP</a>
+    <a href="#contact" class="text-lg font-medium text-gray-700">Contact</a>
+  </nav>
