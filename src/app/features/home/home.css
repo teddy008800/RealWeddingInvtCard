@@ -1,0 +1,57 @@
+@keyframes wishFade {
+  0% {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+}
+
+.wish-animate {
+  animation: wishFade 4s ease-in-out;
+}
+
+.wish-card {
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* New card coming from bottom */
+.wish-enter {
+  opacity: 1;
+  transform: translateY(0);
+  animation: wishIn 0.6s ease;
+}
+
+/* Top card leaving upward */
+.wish-leave {
+  opacity: 0;
+  transform: translateY(-12px);
+}
+
+@keyframes wishIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

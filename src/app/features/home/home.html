@@ -1,73 +1,390 @@
-<div class="min-h-screen bg-cover bg-center" style="background-image:url('/assets/images/bg-wedding.jpg')">
+<!-- Main Container -->
+<div class="max-w-lg mx-auto bg-white shadow-2xl min-h-screen pb-20 relative overflow-hidden">
 
-    <!-- SALAM -->
-    <section class="pt-16 text-center text-white text-4xl font-serif drop-shadow-lg">
-      <p>بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</p>
+  <!-- Background Image Overlay -->
+  <div class="fixed inset-0 max-w-lg mx-auto opacity-20 pointer-events-none">
+    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800" alt="Floral Background" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Content -->
+  <div class="relative z-10">
+
+    <!-- 1. SALAM Section -->
+    <section id="home" class="min-h-screen flex flex-col items-center justify-center px-6 py-12 text-center bg-gradient-to-b from-white/90 to-transparent">
+      <div class="mb-6">
+        <svg class="w-20 h-20 mx-auto text-rose-400" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        </svg>
+      </div>
+      <h1 class="font-serif text-5xl md:text-6xl text-rose-600 mb-4">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم</h1>
+      <p class="text-gray-700 leading-relaxed mb-6 max-w-md text-sm md:text-base">
+        Assalamualaikum Warahmatullahi Wabarakatuh
+      </p>
+      <div class="w-16 h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent mb-6"></div>
+      <p class="text-gray-600 leading-relaxed max-w-md text-sm md:text-base">
+        With the blessing of Allah SWT, we joyfully invite you to celebrate the wedding of
+      </p>
     </section>
 
-    <!-- Parent & Couple -->
-    <section class="mt-8 text-center text-gray-900">
-      <p class="text-xl">Parents of Groom & Bride</p>
-      <h1 class="text-5xl font-bold">Aqil <span class="text-pink-500">&</span> Syafiqah</h1>
+    <!-- 2. Parent Names -->
+    <section class="px-6 py-12 bg-white/80 backdrop-blur-sm">
+      <div class="max-w-md mx-auto text-center space-y-8">
+        <div>
+          <p class="text-gray-600 text-sm mb-2">Daughter of</p>
+          <h3 class="font-serif text-2xl text-gray-800">Mr. Abdullah bin Hassan</h3>
+          <p class="text-gray-600">&</p>
+          <h3 class="font-serif text-2xl text-gray-800">Mrs. Fatimah binti Ahmad</h3>
+        </div>
+
+        <div class="py-4">
+          <p class="text-rose-400 text-2xl">&</p>
+        </div>
+
+        <div>
+          <p class="text-gray-600 text-sm mb-2">Son of</p>
+          <h3 class="font-serif text-2xl text-gray-800">Mr. Ibrahim bin Ali</h3>
+          <p class="text-gray-600">&</p>
+          <h3 class="font-serif text-2xl text-gray-800">Mrs. Aminah binti Rahman</h3>
+        </div>
+      </div>
     </section>
 
-    <!-- Venue / Date / Time -->
-    <section class="mt-8 text-center text-gray-800">
-      <p class="text-lg">Venue: Grand Ballroom</p>
-      <p class="text-lg">12th Aug 2026 | 11:00 AM</p>
+    <!-- 3. Couple Names -->
+    <section class="px-6 py-16 bg-gradient-to-br from-rose-50/90 to-pink-50/90 backdrop-blur-sm">
+      <div class="max-w-md mx-auto text-center">
+        <div class="mb-8">
+          <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400" alt="Bride" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-lg">
+          <h2 class="font-serif text-4xl md:text-5xl text-rose-600 mt-4 mb-2">Sarah</h2>
+          <p class="text-gray-600 text-sm">Sarah binti Abdullah</p>
+        </div>
+
+        <div class="my-6">
+          <p class="font-serif text-4xl text-rose-400">&</p>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400" alt="Groom" class="w-32 h-32 rounded-full mx-auto object-cover border-4 border-white shadow-lg">
+          <h2 class="font-serif text-4xl md:text-5xl text-rose-600 mt-4 mb-2">Ahmad</h2>
+          <p class="text-gray-600 text-sm">Ahmad bin Ibrahim</p>
+        </div>
+      </div>
     </section>
 
-    <!-- Optional Tentative -->
-    <section class="mt-8 p-4 bg-white/70 rounded-lg max-w-xl mx-auto text-center">
-      <h2 class="text-2xl font-semibold mb-2">Tentative Schedule</h2>
-      <p>Ceremony — 11:00 AM</p>
-      <p>Reception — 1:00 PM</p>
+    <!-- 4. Venue/Date/Time -->
+    <section class="px-6 py-12 bg-white/80 backdrop-blur-sm">
+      <div class="max-w-md mx-auto">
+        <h2 class="font-serif text-3xl text-center text-rose-600 mb-8">Wedding Details</h2>
+
+        <div class="space-y-6">
+          <div class="flex items-start space-x-4 bg-rose-50 p-4 rounded-lg">
+            <svg class="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-1">Date</h4>
+              <p class="text-gray-600">Saturday, 15th March 2025</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 bg-rose-50 p-4 rounded-lg">
+            <svg class="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-1">Time</h4>
+              <p class="text-gray-600">11:00 AM - 4:00 PM</p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 bg-rose-50 p-4 rounded-lg">
+            <svg class="w-6 h-6 text-rose-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <div>
+              <h4 class="font-semibold text-gray-800 mb-1">Venue</h4>
+              <p class="text-gray-600">Grand Ballroom, Majestic Hotel<br>123 Wedding Street, Kuala Lumpur</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Countdown -->
-    <section class="mt-8 text-center">
-      <app-countdown-timer [weddingDate]="weddingDate" class="text-3xl font-bold text-pink-600"></app-countdown-timer>
+    <!-- 5. Tentative Section -->
+    <section class="px-6 py-12 bg-gradient-to-br from-amber-50/90 to-rose-50/90 backdrop-blur-sm">
+      <div class="max-w-md mx-auto">
+        <h2 class="font-serif text-3xl text-center text-rose-600 mb-8">Event Schedule</h2>
+
+        <div class="space-y-4">
+          <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-sm">
+            <div class="bg-rose-100 text-rose-600 font-semibold px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+              11:00 AM
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Guest Arrival</h4>
+              <p class="text-gray-600 text-sm">Welcome drinks & registration</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-sm">
+            <div class="bg-rose-100 text-rose-600 font-semibold px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+              12:00 PM
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Akad Nikah Ceremony</h4>
+              <p class="text-gray-600 text-sm">Wedding solemnization</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-sm">
+            <div class="bg-rose-100 text-rose-600 font-semibold px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+              1:00 PM
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Wedding Reception</h4>
+              <p class="text-gray-600 text-sm">Lunch & celebrations</p>
+            </div>
+          </div>
+
+          <div class="flex items-center space-x-4 bg-white p-4 rounded-lg shadow-sm">
+            <div class="bg-rose-100 text-rose-600 font-semibold px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+              3:00 PM
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-800">Photography Session</h4>
+              <p class="text-gray-600 text-sm">Photo opportunities</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Picture Gallery -->
-    <section class="mt-12 grid grid-cols-2 sm:grid-cols-3 gap-4 p-4">
-      <img src="/assets/images/gallery1.jpg" class="w-full h-auto rounded-lg shadow-lg" />
-      <img src="/assets/images/gallery2.jpg" class="w-full h-auto rounded-lg shadow-lg" />
-      <img src="/assets/images/gallery3.jpg" class="w-full h-auto rounded-lg shadow-lg" />
+    <!-- 6. Countdown -->
+    <section class="px-6 py-12 bg-white/80 backdrop-blur-sm">
+      <div class="max-w-md mx-auto text-center">
+        <h2 class="font-serif text-3xl text-rose-600 mb-8">Counting Down To Our Big Day</h2>
+
+        <div id="countdown" class="grid grid-cols-4 gap-4 mb-6">
+          <div class="bg-gradient-to-br from-rose-100 to-pink-100 p-4 rounded-lg shadow-md">
+            <div class="text-3xl font-bold text-rose-600">{{ countdown.days }}</div>
+            <div class="text-xs text-gray-600">Days</div>
+          </div>
+          <div class="bg-gradient-to-br from-rose-100 to-pink-100 p-4 rounded-lg shadow-md">
+            <div class="text-3xl font-bold text-rose-600">{{ countdown.hours }}</div>
+            <div class="text-xs text-gray-600">Hours</div>
+          </div>
+          <div class="bg-gradient-to-br from-rose-100 to-pink-100 p-4 rounded-lg shadow-md">
+            <div class="text-3xl font-bold text-rose-600">{{ countdown.minutes }}</div>
+            <div class="text-xs text-gray-600">Minutes</div>
+          </div>
+          <div class="bg-gradient-to-br from-rose-100 to-pink-100 p-4 rounded-lg shadow-md">
+            <div class="text-3xl font-bold text-rose-600">{{ countdown.seconds }}</div>
+            <div class="text-xs text-gray-600">Seconds</div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Guest Wish Notes -->
-    <section class="mt-12 p-4 max-w-2xl mx-auto">
-      <h2 class="text-center text-3xl font-semibold mb-4">Guest Wishes</h2>
-      <ul class="space-y-3">
-        <li class="bg-white p-3 rounded-lg shadow-sm">“Congratulations and best wishes!”</li>
-        <li class="bg-white p-3 rounded-lg shadow-sm">“May your life be filled with joy.”</li>
-      </ul>
+    <!-- 7. Picture Gallery -->
+    <section id="gallery" class="px-6 py-12 bg-gradient-to-br from-pink-50/90 to-rose-50/90 backdrop-blur-sm">
+      <div class="max-w-md mx-auto">
+        <h2 class="font-serif text-3xl text-center text-rose-600 mb-8">Our Memories</h2>
+
+        <div class="flex gap-3 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+          <div *ngFor="let img of [
+                                    'https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400',
+                                    'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=400',
+                                    'https://images.unsplash.com/photo-1594379747066-6c2c1d6e0c8c?w=400',
+                                    'https://images.unsplash.com/photo-1519741497674-611481863552?w=400'
+                                  ]"
+               class="snap-center min-w-[70%] md:min-w-[30%] rounded-lg overflow-hidden shadow-md">
+            <img [src]="img" class="w-full h-64 object-cover hover:scale-110 transition duration-500">
+          </div>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Guest Form -->
-    <section class="mt-12 p-4 max-w-xl mx-auto bg-white rounded-lg shadow-lg">
-      <h2 class="text-2xl font-semibold mb-4 text-center">Leave a Wish / RSVP</h2>
-      <form class="space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg" />
-        <input type="text" placeholder="Wish / Message" class="w-full p-3 border rounded-lg" />
-        <button class="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold">Send</button>
-      </form>
+    <!-- 8. Guest Wish Notes Display -->
+    <section class="px-6 py-12 bg-white/80 backdrop-blur-sm">
+      <div class="max-w-md mx-auto">
+        <h2 class="font-serif text-3xl text-center text-rose-600 mb-8">Wishes From Guests</h2>
+
+        <div class="space-y-4">
+          <div *ngFor="let wish of visibleWishes"
+               class="bg-rose-50 p-4 rounded-lg border-l-4 border-rose-400 wish-card"
+               [ngClass]="{
+                            'wish-enter': wish.state === 'enter',
+                            'wish-leave': wish.state === 'leave'
+                          }">
+            <p class="text-gray-700 mb-2">"{{ wish.wish }}"</p>
+            <p class="text-sm text-gray-500">- {{ wish.name }}</p>
+          </div>
+        </div>
+
+
+      </div>
     </section>
 
-    <!-- QR Donation -->
-    <section class="mt-12 text-center">
-      <h2 class="text-2xl font-semibold mb-3">QR for Donations</h2>
-      <img src="/assets/images/qr-money.png" class="mx-auto w-40 h-40" />
+    <!-- 9. RSVP Form -->
+    <section id="rsvp" class="px-6 py-12 bg-gradient-to-br from-amber-50/90 to-pink-50/90 backdrop-blur-sm">
+      <div class="max-w-md mx-auto">
+        <h2 class="font-serif text-3xl text-center text-rose-600 mb-8">RSVP & Wishes</h2>
+
+        <form id="rsvpForm" class="space-y-4" (submit)="submitWish(); $event.preventDefault()">
+          <div>
+            <label class="block text-gray-700 mb-2 font-medium">Full Name *</label>
+            <input type="text"
+                   name="fullName"
+                   required
+                   [(ngModel)]="formFullname"
+                   class="w-full px-4 py-3 rounded-lg border border-rose-200 focus:border-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-200"
+                   placeholder="Your name">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-medium">Phone Number</label>
+            <input type="tel"
+                   name="tel"
+                   [(ngModel)]="formFNumber"
+                   class="w-full px-4 py-3 rounded-lg border border-rose-200 focus:border-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-200"
+                   placeholder="+60123456789">
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-medium">Number of Guests *</label>
+            <select name="guestNum"
+                    required
+                    [(ngModel)]="formNumberGuest"
+                    class="w-full px-4 py-3 rounded-lg border border-rose-200 focus:border-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-200">
+              <option value="">Select number</option>
+              <option value="1">1 Guest</option>
+              <option value="2">2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5">5+ Guests</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-medium">Attendance *</label>
+            <div class="flex gap-4">
+              <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="radio"
+                       name="attendance"
+                       value="yes"
+                       required
+                       (change)="onAttendanceChange($event)"
+                       class="text-rose-500 focus:ring-rose-400">
+                <span>Will Attend</span>
+              </label>
+              <label class="flex items-center space-x-2 cursor-pointer">
+                <input type="radio"
+                       name="attendance"
+                       value="no"
+                       required
+                       (change)="onAttendanceChange($event)"
+                       class="text-rose-500 focus:ring-rose-400">
+                <span>Can't Attend</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-gray-700 mb-2 font-medium">Your Wishes & Messages</label>
+            <textarea rows="4"
+                      name="wishText"
+                      class="w-full px-4 py-3 rounded-lg border border-rose-200 focus:border-rose-400 focus:outline-none focus:ring-2 focus:ring-rose-200 resize-none"
+                      placeholder="Write your wishes for the couple..."
+                      [(ngModel)]="formWish"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-gradient-to-r from-rose-500 to-pink-500 text-white py-3 rounded-lg font-semibold hover:from-rose-600 hover:to-pink-600 transition-all duration-300 shadow-md">
+            Submit RSVP
+          </button>
+        </form>
+      </div>
     </section>
+
+    <!-- 10. QR Section for Donation -->
+    <section class="px-6 py-12 bg-white/80 backdrop-blur-sm">
+      <div class="max-w-md mx-auto text-center">
+        <h2 class="font-serif text-3xl text-rose-600 mb-4">Wedding Gift</h2>
+        <p class="text-gray-600 mb-8">Your presence is the greatest gift, but if you wish to honor us with a gift, you may do so here:</p>
+
+        <div class="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-lg shadow-lg mb-6">
+          <!-- Placeholder QR Code -->
+          <div class="bg-white p-6 rounded-lg inline-block shadow-md">
+            <div class="w-48 h-48 mx-auto bg-gray-200 flex items-center justify-center">
+              <svg class="w-32 h-32 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M3 3h8v8H3V3zm2 2v4h4V5H5zm8-2h8v8h-8V3zm2 2v4h4V5h-4zM3 13h8v8H3v-8zm2 2v4h4v-4H5zm11-2h3v2h-3v-2zm0 3h2v3h3v2h-5v-5zm5-3v2h2v-2h-2z" />
+              </svg>
+            </div>
+          </div>
+          <p class="text-sm text-gray-600 mt-4">Scan to send your gift</p>
+        </div>
+
+        <div class="bg-rose-50 p-4 rounded-lg">
+          <p class="text-sm font-semibold text-gray-800 mb-2">Bank Transfer Details:</p>
+          <p class="text-sm text-gray-600">Bank: Maybank</p>
+          <p class="text-sm text-gray-600">Account: 1234567890</p>
+          <p class="text-sm text-gray-600">Name: Sarah & Ahmad Wedding</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Footer -->
+    <footer class="px-6 py-8 bg-gradient-to-br from-rose-100/90 to-pink-100/90 backdrop-blur-sm text-center">
+      <div class="max-w-md mx-auto">
+        <p class="font-serif text-2xl text-rose-600 mb-3">Thank You</p>
+        <p class="text-gray-600 text-sm mb-4">We can't wait to celebrate with you!</p>
+        <div class="w-16 h-1 bg-gradient-to-r from-transparent via-rose-400 to-transparent mx-auto mb-4"></div>
+        <p class="text-gray-500 text-xs">© 2025 Sarah & Ahmad Wedding</p>
+        <p class="text-gray-500 text-xs mt-2">Made with ❤️ for our special day</p>
+      </div>
+    </footer>
 
   </div>
 
-  <!-- Sticky Bottom Navbar -->
-  <nav class="fixed bottom-0 left-0 w-full bg-white shadow-inner flex justify-around py-3">
-    <a href="#home" class="text-lg font-medium text-gray-700">Home</a>
-    <a href="#location" class="text-lg font-medium text-gray-700">Location</a>
-    <a href="#calendar" class="text-lg font-medium text-gray-700">Calendar</a>
-    <a href="#rsvp" class="text-lg font-medium text-gray-700">RSVP</a>
-    <a href="#contact" class="text-lg font-medium text-gray-700">Contact</a>
+  <!-- 12. Bottom Navigation Bar -->
+  <nav class="fixed bottom-0 left-0 right-0 max-w-lg mx-auto bg-white border-t border-rose-200 shadow-lg z-50">
+    <div class="flex justify-around items-center py-2">
+      <a href="#home" class="flex flex-col items-center py-2 px-3 text-rose-500 hover:text-rose-600 transition-colors">
+        <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" />
+        </svg>
+        <span class="text-xs">Home</span>
+      </a>
+
+      <a href="https://maps.google.com" target="_blank" class="flex flex-col items-center py-2 px-3 text-gray-600 hover:text-rose-600 transition-colors">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span class="text-xs">Location</span>
+      </a>
+
+      <a href="#rsvp" class="flex flex-col items-center py-2 px-3 text-gray-600 hover:text-rose-600 transition-colors">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+        </svg>
+        <span class="text-xs">RSVP</span>
+      </a>
+
+      <button onclick="addToCalendar()" class="flex flex-col items-center py-2 px-3 text-gray-600 hover:text-rose-600 transition-colors">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+        <span class="text-xs">Calendar</span>
+      </button>
+
+      <a href="https://wa.me/60123456789" target="_blank" class="flex flex-col items-center py-2 px-3 text-gray-600 hover:text-rose-600 transition-colors">
+        <svg class="w-6 h-6 mb-1" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.23-8.24 8.23-1.48 0-2.93-.39-4.19-1.15l-.3-.17-3.12.82.83-3.04-.2-.32a8.188 8.188 0 01-1.26-4.38c.01-4.54 3.7-8.24 8.25-8.24M8.53 7.33c-.16 0-.43.06-.66.31-.22.25-.87.85-.87 2.07 0 1.22.89 2.39 1 2.56.14.17 1.76 2.67 4.25 3.73.59.27 1.05.42 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.46-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.16-.48-.27-.25-.14-1.47-.74-1.69-.82-.23-.08-.37-.12-.56.12-.16.25-.64.81-.78.97-.15.17-.29.19-.53.07-.26-.13-1.06-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.12-.24-.01-.39.11-.5.11-.11.27-.29.37-.44.13-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.11-.56-1.35-.77-1.84-.2-.48-.4-.42-.56-.43-.14 0-.3-.01-.47-.01z" />
+        </svg>
+        <span class="text-xs">Contact</span>
+      </a>
+    </div>
   </nav>
+</div>

@@ -2,6 +2,20 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
+export interface Wish {
+  slug?: string;
+  name?: string;
+  notel?: string;
+  numguest?: string;
+  attendance?: string;
+  wish?: string;
+  timestamp?: string;
+}
+export interface WishPayload {
+  name: string;
+  wish: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,5 +31,18 @@ export class GoogleApiService {
 
   submitRsvp(payload: any): Observable<any> {
     return this.http.post<any>(this.baseUrl, payload);
+  }
+
+
+  getWishes(): Observable<Wish[]> {
+    return this.http.get<Wish[]>(this.baseUrl);
+  }
+
+  addWish(wish: string, name?: string): Observable<any> {
+    return this.http.post(this.baseUrl, { wish, name });
+  }
+
+  submitWish(payload: WishPayload) {
+    return this.http.post('/api/wish', payload);
   }
 }
