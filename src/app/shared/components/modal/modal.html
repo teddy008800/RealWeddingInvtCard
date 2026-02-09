@@ -1,0 +1,8 @@
+<div class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-start p-4 z-50">
+  <div class="bg-white rounded-lg shadow-lg w-full max-w-3xl overflow-auto">
+    <div class="p-4 text-right">
+      <button (click)="onCloseClick()" class="text-gray-600 hover:text-gray-900 font-bold">✕</button>
+    </div>
+    <ng-content></ng-content>
+  </div>
+</div>
