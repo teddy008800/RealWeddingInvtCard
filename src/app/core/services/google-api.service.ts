@@ -43,6 +43,10 @@ export class GoogleApiService {
   }
 
   submitWish(payload: WishPayload) {
-    return this.http.post('/api/wish', payload);
+    const apiUrl =
+      window.location.hostname === 'localhost'
+        ? 'http://localhost:3000/api/wish'  // local dev
+        : '/api/wish';  
+    return this.http.post(apiUrl, payload);
   }
 }
