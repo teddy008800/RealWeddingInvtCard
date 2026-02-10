@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { GoogleApiService, Wish, WishPayload } from '../../core/services/google-api.service';
 
 interface Wishh {
@@ -14,6 +14,8 @@ interface Wishh {
   styleUrl: './home.css',
 })
 export class Home implements OnInit, OnDestroy {
+  @ViewChild('gasFrame') gasFrame!: ElementRef<HTMLIFrameElement>;
+
   formSlug = "aqil-syafiqah";
   formCreatedAt: Date = new Date;
   formFullname: string = "";
@@ -39,11 +41,25 @@ export class Home implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.startCountdown();
     this.loadWishes();
+    this.onEventReceiveMessage();
   }
 
   ngOnDestroy(): void {
     clearInterval(this.interval);
   }
+
+  onEventReceiveMessage() {
+    window.addEventListener('message', (event) => {
+      if (event.origin !== 'https://script.google.com') return;
+
+      if (event.data?.status === 'ok') {
+        console.log('Wish saved!');
+
+        this.loadWishes();
+      }
+    });
+  }
+
 
   loadWishes() {
     this.wishService.getWishes().subscribe(data => {
@@ -54,18 +70,26 @@ export class Home implements OnInit, OnDestroy {
   }
 
   submitWish() {
-    if (!this.formWish.trim()) return;
+    //if (!this.formWish.trim()) return;
 
-    let payload: WishPayload = {
-      name: this.formFullname,
-      wish: this.formWish
-    };
+    //let payload: WishPayload = {
+    //  name: this.formFullname,
+    //  wish: this.formWish
+    //};
 
-    this.wishService.submitWish(payload).subscribe(() => {
-      //this.wishesGet.unshift({ timestamp: this.formCreatedAt.toISOString(), name: this.formFullname, wish: this.formWish });
+    //this.wishService.submitWish(payload).subscribe(() => {
+    //  //this.wishesGet.unshift({ timestamp: this.formCreatedAt.toISOString(), name: this.formFullname, wish: this.formWish });
 
-      this.loadWishes();
-    });
+    //  this.loadWishes();
+    //});
+
+    this.gasFrame.nativeElement.contentWindow?.postMessage(
+      {
+        name: this.formFullname,
+        wish: this.formWish
+      },
+      'https://script.google.com'
+    );
   }
 
   //submitWish() {
